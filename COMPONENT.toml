@@ -3,7 +3,7 @@ name = "SigmaOS-archwiki"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "archwiki component"
+description = "SigmaOS archwiki component (Arch Linux inspired)"
 upstream = []
 
 [contract]
