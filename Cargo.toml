@@ -1,8 +1,15 @@
 [package]
-name = "sigmaos-archwiki"
+name = "SigmaOS-archwiki"
 version = "0.1.0"
 edition = "2021"
-license = "MIT"
-description = "Project wiki engine (MediaWiki-inspired) — SigmaOS component inspired by Arch Linux infrastructure."
+license = "Apache-2.0"
+description = "SigmaOS archwiki component"
+
+[lib]
+name = "archwiki"
+path = "src/lib.rs"
 
 [dependencies]
+thiserror = "1"
+
+[dev-dependencies]
