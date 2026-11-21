@@ -1,16 +1,16 @@
 [component]
 name = "SigmaOS-archwiki"
 tier = 2
-stability = "scaffold"
+stability = "beta"
 language = "rust"
 description = "SigmaOS archwiki component (Arch Linux inspired)"
-upstream = []
+upstream = ["https://github.com/archlinux/archwiki"]
 
 [contract]
-provides = ["component"]
+provides = ["wiki-model", "link-parse", "revision-history"]
 depends_on = []
 
 [maturity]
 status = "Implemented"
-test_evidence = "Compiles and passes AAA unit tests"
+test_evidence = "cargo test: 11 tests pass (titles/namespaces, links, revisions)"
 next_milestone = "Hardware and runtime integration"
